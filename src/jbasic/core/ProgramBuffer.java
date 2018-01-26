@@ -8,7 +8,6 @@ public final class ProgramBuffer {
 
     private final Map<Integer, CommandWithArgs> lines = new LinkedHashMap<>();
     private final Map<String, Double> variables = new HashMap<>();
-    private final Stack<String> execution = new Stack<>();
 
     public CommandWithArgs getLine(final int index) {
         return lines.getOrDefault(index, null);
